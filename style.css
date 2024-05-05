@@ -1,0 +1,76 @@
+a{ 
+    text-decoration: none; 
+    font-size: 40px; 
+} 
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+p {
+    font-size: 30px;
+}
+nav{ 
+    height: 90px; 
+    display: flex; 
+    align-items: center; 
+    width: 700px;
+    margin: auto;
+    justify-content: space-around;
+} 
+ 
+input{ 
+    font-size: 30px; 
+    padding: 10px 20px; 
+    display: block; 
+    width: calc(100% - 40px); 
+    margin-bottom: 50px; 
+} 
+#aboutme{ 
+    display: flex; 
+    justify-content: center; 
+} 
+#gamebox{ 
+    width: 700px; 
+} 
+.knopka {
+    padding: 15px;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 69px;
+}
+#blocknopka{
+    display: flex;
+    justify-content: center;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow-img {
+  width: 100px; /* Starting width */
+  height: auto;
+  animation: grow 5s linear infinite;
+}
+.punch-img {
+  width: 200px; /* Starting width */
+  height: auto;
+  transition: transform 0.3s ease; /* Transition for smooth scaling */
+}
+@keyframes grow {
+  0% {
+    transform: scale(1) rotate(0deg); /* Initial size */
+  }
+  50%{
+    transform: scale(10) 
+  }
+  100% {
+    transform: scale(1) rotate(180deg); /* Final size (adjust as needed) */
+  }
+.punch-img.punched {
+  transform: scale(1.5); /* Scale up after punch */
+}
